@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>AlunoModal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label>
+        Nome:
+      </ion-label>
+      <ion-input [(ngModel)]="aluno.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Perfil:
+      </ion-label>
+      <ion-input [(ngModel)]="aluno.perfil"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        URL:
+      </ion-label>
+      <ion-input [(ngModel)]="aluno.url"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" (click)="add()">Full Button</ion-button>
+
+  </ion-card>
+</ion-content>
